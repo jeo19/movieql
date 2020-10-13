@@ -2,9 +2,10 @@
   "name": "Node-GraphQL-API",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/jeo19/node-graphql-api.git",
+  "author": "jeo19 <terrakkk@outlook.com>",
   "license": "MIT",
   "dependencies": {
-    "apollo-server-express": "^2.18.2",
-    "express": "^4.17.1"
+    "graphql-yoga": "^1.18.3"
   }
 }
