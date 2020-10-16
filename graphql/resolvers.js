@@ -1,6 +1,11 @@
+const human = {
+    name: 'King Kong',
+    age: 20,
+    gender: 'female',
+};
 const resolvers = {
     Query: {
-        name: () => 'Testing resolovers',
+        person: () => human,
     },
 };
 export default resolvers;
