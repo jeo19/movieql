@@ -30,3 +30,7 @@ export const Person = [
         gender: 'female',
     },
 ];
+export const getById = (id) => {
+    const filterPerson = Person.filter((people) => people.id == id);
+    return filterPerson[0];
+};
