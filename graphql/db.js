@@ -16,3 +16,15 @@ export const getMovies = async (limit, rating) => {
     });
     return movies;
 };
+export const getMovie = async (id) => {
+    const {
+        data: {
+            data: { movie },
+        },
+    } = await axios(MOVIE_DETAILS_URL, {
+        params: {
+            movie_id: id,
+        },
+    });
+    return movie;
+};
