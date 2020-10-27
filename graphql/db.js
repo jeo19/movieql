@@ -28,3 +28,15 @@ export const getMovie = async (id) => {
     });
     return movie;
 };
+export const getSuggestions = async (id) => {
+    const {
+        data: {
+            data: { movies },
+        },
+    } = await axios(MOVIE_SUGGESTIONS_URL, {
+        params: {
+            movie_id: id,
+        },
+    });
+    return movies;
+};
